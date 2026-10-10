@@ -1,0 +1,71 @@
+.leetcodePage {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.content {
+  max-width: 800px;
+}
+
+.philosophyBox {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 2rem;
+  margin-bottom: 3rem;
+}
+
+.heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.paragraph {
+  color: var(--text-secondary);
+  line-height: 1.8;
+  font-size: 1.05rem;
+  margin-bottom: 1rem;
+}
+
+.focusList {
+  list-style: none;
+  padding: 0;
+  margin-top: 1.5rem;
+}
+
+.focusItem {
+  position: relative;
+  padding-left: 1.5rem;
+  color: var(--text-primary);
+  margin-bottom: 0.75rem;
+}
+
+.focusItem::before {
+  content: '▹';
+  position: absolute;
+  left: 0;
+  color: var(--accent-color);
+}
+
+.linkButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--accent-color);
+  color: #fff;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: background-color var(--transition-fast);
+  margin-top: 2rem;
+}
+
+.linkButton:hover {
+  background-color: var(--accent-hover);
+}
+
+[data-theme='light'] .linkButton {
+  color: white;
+}
